@@ -23,7 +23,7 @@ namespace LibraryManagement
         private void Fees_Load(object sender, EventArgs e)
         {
             // Call the method to load the user's current fines and display it
-            
+
         }
 
         private void LoadCurrentFines()
@@ -71,6 +71,11 @@ namespace LibraryManagement
             {
                 MessageBox.Show("An error occurred while loading the fines: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Stripe Payment Processor", "Stripe Payment Processor", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
