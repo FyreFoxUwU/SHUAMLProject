@@ -31,6 +31,7 @@
             label1 = new Label();
             label2 = new Label();
             feesLabel = new Label();
+            button1 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -63,11 +64,22 @@
             feesLabel.TabIndex = 5;
             feesLabel.Text = "£";
             // 
+            // button1
+            // 
+            button1.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.Location = new Point(475, 557);
+            button1.Name = "button1";
+            button1.Size = new Size(318, 77);
+            button1.TabIndex = 6;
+            button1.Text = "Pay Fines via Stripe";
+            button1.UseVisualStyleBackColor = true;
+            // 
             // Fees
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1372, 744);
+            Controls.Add(button1);
             Controls.Add(feesLabel);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -82,5 +94,6 @@
         private Label label1;
         private Label label2;
         private Label feesLabel;
+        private Button button1;
     }
 }
